@@ -10,7 +10,7 @@ const TextLogo = ({ dark = false }) => {
         <span className={`text-xl font-bold tracking-tight ${
           dark ? 'text-gray-900' : 'text-gray-200'
         } font-serif`}>
-          SHASHI
+          SHAAHI
         </span>
         <span className={`text-[9px] font-semibold tracking-[0.2em] uppercase ${
           dark ? 'text-amber-700' : 'text-amber-300'
