@@ -7,15 +7,15 @@ const PageTitle = ({ title, description }) => {
       <title>
         {" "}
         {title
-          ? `${title} | Shashi Furniture Admin Dashboard`
-          : "Shashi Furniture | Admin Dashboard"}
+          ? `${title} | SHAAHI FURNITURE Admin Dashboard`
+          : "SHAAHI FURNITURE | Admin Dashboard"}
       </title>
       <meta
         name="description"
         content={
           description
             ? ` ${description} `
-            : "Shashi Furniture : Premium Furniture & Home Decor Store Admin Dashboard"
+            : "SHAAHI FURNITURE : Premium Furniture & Home Decor Store Admin Dashboard"
         }
       />
     </Helmet>

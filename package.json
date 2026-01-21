@@ -1,7 +1,7 @@
 {
-  "name": "shashi-furniture-admin",
+  "name": "shaahi-furniture-admin",
   "version": "0.1.0",
-  "description": "Shashi Furniture Admin Dashboard built with react.js and tailwindcss",
+  "description": "SHAAHI FURNITURE Admin Dashboard built with react.js and tailwindcss",
   "private": true,
   "type": "module",
   "dependencies": {

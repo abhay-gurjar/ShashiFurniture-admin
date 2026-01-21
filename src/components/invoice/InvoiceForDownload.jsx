@@ -345,7 +345,7 @@ const InvoiceForDownload = ({
               >
                 <Image
                   src={logoDark}
-                  alt="Shashi Furniture"
+                  alt="SHAAHI FURNITURE"
                   style={{
                     width: 90,
                     alignItems: "right",
