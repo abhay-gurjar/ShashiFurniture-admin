@@ -59,10 +59,10 @@ export default defineConfig({
         scope: ".",
         start_url: ".",
         id: ".",
-        short_name: "Shashi Furniture - E-Commerce Website",
-        name: "Shashi Furniture | React eCommerce Admin Dashboard",
+        short_name: "Shaahi Furniture - E-Commerce Website",
+        name: "Shaahi Furniture | React eCommerce Admin Dashboard",
         description:
-          "Shashi Furniture : React Furniture Store e-commerce Admin Dashboard",
+          "Shaahi Furniture : React Furniture Store e-commerce Admin Dashboard",
         icons: [
           {
             src: "favicon.ico",

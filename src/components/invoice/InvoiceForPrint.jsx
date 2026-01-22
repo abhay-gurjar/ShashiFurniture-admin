@@ -21,15 +21,13 @@ const InvoiceForPrint = ({ data, printRef, globalSetting }) => {
       {Array.isArray(data) ? (
         data?.map((or, i) => (
           <div className="mb-8" key={i + 1}>
-            {globalSetting?.logo && (
               <img
                 className="flex mx-auto"
                 size="large"
-                src={globalSetting?.logo}
+                src="/product-images/logo12.png"
                 alt=""
                 width={50}
               />
-            )}
 
             <div className="my-1">
               <div className="flex justify-center">
@@ -39,15 +37,15 @@ const InvoiceForPrint = ({ data, printRef, globalSetting }) => {
               </div>
 
               <ModalBody className="flex flex-col justify-center text-center">
-                <span className="flex-row">{globalSetting?.address}</span>
+                <span className="flex-row">{"Dummy Address, City, Country"}</span>
 
                 <span className="flex justify-center">
-                  {globalSetting?.contact}
+                  {"0000000000"}
                 </span>
 
-                {globalSetting?.web_site}
+                {"www.dummy-website.com"}
                 <br />
-                {globalSetting?.email}
+                {"dummy@example.com"}
               </ModalBody>
             </div>
 
@@ -258,15 +256,13 @@ const InvoiceForPrint = ({ data, printRef, globalSetting }) => {
         ))
       ) : (
         <Fragment>
-          {globalSetting?.logo && (
-            <img
-              className="flex mx-auto"
-              size="large"
-              src={globalSetting?.logo}
-              alt=""
-              width={50}
-            />
-          )}
+          <img
+            className="flex mx-auto"
+            size="large"
+            src="/product-images/logo12.png"
+            alt=""
+            width={50}
+          />
 
           <div className="my-1">
             <div className="flex justify-center">
@@ -276,15 +272,15 @@ const InvoiceForPrint = ({ data, printRef, globalSetting }) => {
             </div>
 
             <ModalBody className="flex flex-col justify-center text-center">
-              <span className="flex-row">{globalSetting?.address}</span>
+              <span className="flex-row">{"Dummy Address, City, Country"}</span>
 
               <span className="flex justify-center">
-                {globalSetting?.contact}
+                {"0000000000"}
               </span>
 
-              {globalSetting?.web_site}
+              {"www.dummy-website.com"}
               <br />
-              {globalSetting?.email}
+              {"dummy@example.com"}
             </ModalBody>
           </div>
 

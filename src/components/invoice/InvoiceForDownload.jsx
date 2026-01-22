@@ -9,7 +9,7 @@ import {
   View,
 } from "@react-pdf/renderer";
 import { useTranslation } from "react-i18next";
-import logoDark from "@/assets/img/logo/logo-color.png";
+// import logoDark from "@/assets/img/logo/logo-color.png";
 
 Font.register({
   family: "Open Sans",
@@ -344,7 +344,7 @@ const InvoiceForDownload = ({
                 }}
               >
                 <Image
-                  src={logoDark}
+                  src="/product-images/logo12.png"
                   alt="SHAAHI FURNITURE"
                   style={{
                     width: 90,
@@ -362,13 +362,13 @@ const InvoiceForDownload = ({
                   textAlign: "right",
                 }}
               >
-                {globalSetting?.address}
+                {"Dummy Address, City, Country"}
                 {"\n"}
-                {globalSetting?.contact}
+                {"0000000000"}
                 {"\n"}
-                {globalSetting?.email}
+                {"dummy@example.com"}
                 {"\n"}
-                {globalSetting?.website}
+                {"www.dummy-website.com"}
               </Text>
             </View>
           </View>

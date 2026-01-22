@@ -16,7 +16,16 @@ const useUtilsFunction = () => {
     data: globalSetting,
   } = useQuery({
     queryKey: ["globalSetting"],
-    queryFn: async () => await SettingServices.getGlobalSetting(),
+    queryFn: async () => {
+      const res = await SettingServices.getGlobalSetting();
+      return {
+        ...res,
+        address: "Dummy Address, City, Country",
+        contact: "0000000000",
+        email: "dummy@example.com",
+        website: "www.dummy-website.com",
+      };
+    },
     staleTime: 20 * 60 * 1000, //cache for 20 minutes,
     gcTime: 25 * 60 * 1000,
   });

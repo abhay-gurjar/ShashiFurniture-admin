@@ -23,8 +23,6 @@ import { AdminContext } from "@/context/AdminContext";
 import OrderServices from "@/services/OrderServices";
 import Invoice from "@/components/invoice/Invoice";
 import Loading from "@/components/preloader/Loading";
-import logoDark from "@/assets/img/logo/logo-dark.svg";
-import logoLight from "@/assets/img/logo/logo-color.svg";
 import PageTitle from "@/components/Typography/PageTitle";
 import spinnerLoadingImage from "@/assets/img/spinner.gif";
 import useUtilsFunction from "@/hooks/useUtilsFunction";
@@ -71,10 +69,10 @@ const OrderInvoice = () => {
           currency: currency,
           vat_number: globalSetting?.vat_number,
           company: globalSetting?.company_name,
-          address: globalSetting?.address,
-          phone: globalSetting?.contact,
-          email: globalSetting?.email,
-          website: globalSetting?.website,
+          address: "Dummy Address, City, Country",
+          phone: "0000000000",
+          email: "dummy@example.com",
+          website: "www.dummy-website.com",
           from_email: globalSetting?.from_email,
         },
       };
@@ -114,16 +112,16 @@ const OrderInvoice = () => {
               <div className="lg:text-right text-left">
                 <h2 className="lg:flex lg:justify-end text-lg font-serif font-semibold mt-4 lg:mt-0 lg:ml-0 md:mt-0">
                   {mode === "dark" ? (
-                    <img src={logoDark} alt="SHAAHI FURNITURE" width="110" />
+                    <img src="/product-images/logo12.png" alt="SHAAHI FURNITURE" width="110" />
                   ) : (
-                    <img src={logoLight} alt="SHAAHI FURNITURE" width="110" />
+                    <img src="/product-images/logo12.png" alt="SHAAHI FURNITURE" width="110" />
                   )}
                 </h2>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-                  {globalSetting?.address} <br />
-                  {globalSetting?.contact} <br />{" "}
-                  <span> {globalSetting?.email} </span> <br />
-                  {globalSetting?.website}
+                  {"Dummy Address, City, Country"} <br />
+                  {"0000000000"} <br />{" "}
+                  <span> {"dummy@example.com"} </span> <br />
+                  {"www.dummy-website.com"}
                 </p>
               </div>
             </div>

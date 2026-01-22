@@ -40,13 +40,13 @@ const useSettingSubmit = (id) => {
           //for common setting
           number_of_image_per_product: data.number_of_image_per_product,
           shop_name: data.shop_name,
-          address: data.address,
+          address: "Dummy Address, City, Country",
           company_name: data.company_name,
           vat_number: data.vat_number,
           post_code: data.post_code,
-          contact: data.contact,
-          email: data.email,
-          website: data.website,
+          contact: "0000000000",
+          email: "dummy@example.com",
+          website: "www.dummy-website.com",
           receipt_size: data.receipt_size,
           default_language: data.default_language,
           default_currency: data.default_currency,
@@ -103,13 +103,13 @@ const useSettingSubmit = (id) => {
             res.number_of_image_per_product
           );
           setValue("shop_name", res.shop_name);
-          setValue("address", res.address);
+          setValue("address", "Dummy Address, City, Country");
           setValue("company_name", res.company_name);
           setValue("vat_number", res.vat_number);
           setValue("post_code", res.post_code);
-          setValue("contact", res.contact);
-          setValue("email", res.email);
-          setValue("website", res.website);
+          setValue("contact", "0000000000");
+          setValue("email", "dummy@example.com");
+          setValue("website", "www.dummy-website.com");
           setValue("receipt_size", res.receipt_size);
           setValue("default_language", res.default_language);
           setValue("default_currency", res.default_currency);

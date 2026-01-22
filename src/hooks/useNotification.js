@@ -9,7 +9,7 @@ const useNotification = () => {
 
   // useEffect(() => {
   //   setSocket(io(import.meta.env.VITE_APP_API_SOCKET_URL));
-  //   // setSocket(io("https://shashifurniture-backend.vercel.app"));
+  //   // setSocket(io("https://shaahifurniture-backend.vercel.app"));
   // }, []);
 
   // useEffect(() => {

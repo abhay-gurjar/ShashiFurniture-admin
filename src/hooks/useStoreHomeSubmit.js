@@ -216,7 +216,7 @@ const useStoreHomeSubmit = () => {
               ...resData?.navbar?.checkout,
               [language]: data.checkout || "",
             }),
-            phone: data.phone_number,
+            phone: "0000000000",
             logo: headerLogo,
           },
           home: {
@@ -459,41 +459,36 @@ const useStoreHomeSubmit = () => {
             }),
             email_box_email: handleRemoveEmptyKey({
               ...resData?.contact_us?.email_box_email,
-              [language]: data.email_box_email || "",
+              [language]: "dummy@example.com",
             }),
             email_box_text: handleRemoveEmptyKey({
               ...resData?.contact_us?.email_box_text,
-              [language]: data.email_box_text || "",
+              [language]: "dummy@example.com",
             }),
-
-            call_box_title: handleRemoveEmptyKey({
-              ...resData?.contact_us?.call_box_title,
-              [language]: data.callUs_box_title || "",
+            callUs_box_phone: handleRemoveEmptyKey({
+              ...resData?.contact_us?.callUs_box_phone,
+              [language]: "0000000000",
             }),
             call_box_phone: handleRemoveEmptyKey({
               ...resData?.contact_us?.call_box_phone,
-              [language]: data.callUs_box_phone || "",
+              [language]: "0000000000",
             }),
             call_box_text: handleRemoveEmptyKey({
               ...resData?.contact_us?.call_box_text,
-              [language]: data.callUs_box_text || "",
+              [language]: "0000000000",
             }),
 
-            address_box_title: handleRemoveEmptyKey({
-              ...resData?.contact_us?.address_box_title,
-              [language]: data.address_box_title || "",
-            }),
             address_box_address_one: handleRemoveEmptyKey({
               ...resData?.contact_us?.address_box_address_one,
-              [language]: data.address_box_address_one || "",
+              [language]: "Dummy Address, City, Country",
             }),
             address_box_address_two: handleRemoveEmptyKey({
               ...resData?.contact_us?.address_box_address_two,
-              [language]: data.address_box_address_two || "",
+              [language]: "",
             }),
             address_box_address_three: handleRemoveEmptyKey({
               ...resData?.contact_us?.address_box_address_three,
-              [language]: data.address_box_address_three || "",
+              [language]: "",
             }),
             form_title: handleRemoveEmptyKey({
               ...resData?.contact_us?.form_title,
@@ -1002,7 +997,7 @@ const useStoreHomeSubmit = () => {
             block4_logo: footerLogo,
             block4_address: handleRemoveEmptyKey({
               ...resData?.footer?.block4_address,
-              [language]: data.footer_block_four_address || "",
+              [language]: "Dummy Address, City, Country",
             }),
             social_facebook: data.social_facebook,
             social_twitter: data.social_twitter,
@@ -1010,8 +1005,8 @@ const useStoreHomeSubmit = () => {
             social_linkedin: data.social_linkedin,
             social_whatsapp: data.social_whatsapp,
             payment_method_img: paymentImage,
-            block4_phone: data.footer_block_four_phone,
-            block4_email: data.footer_block_four_email,
+            block4_phone: "0000000000",
+            block4_email: "dummy@example.com",
             bottom_contact: data.footer_Bottom_Contact,
           },
           slug: {
@@ -1158,7 +1153,7 @@ const useStoreHomeSubmit = () => {
           setValue("logout", res?.navbar?.logout[language || "en"]);
           setValue("checkout", res?.navbar?.checkout[language || "en"]);
           setHeaderLogo(res?.navbar?.logo);
-          setValue("phone_number", res?.navbar?.phone);
+          setValue("phone_number", "0000000000");
 
           //home
 
@@ -1593,10 +1588,10 @@ const useStoreHomeSubmit = () => {
 
           setValue(
             "footer_block_four_address",
-            res?.footer?.block4_address[language || "en"]
+            "Dummy Address, City, Country"
           );
-          setValue("footer_block_four_phone", res?.footer?.block4_phone);
-          setValue("footer_block_four_email", res?.footer?.block4_email);
+          setValue("footer_block_four_phone", "0000000000");
+          setValue("footer_block_four_email", "dummy@example.com");
 
           setValue("social_facebook", res?.footer?.social_facebook);
           setValue("social_twitter", res?.footer?.social_twitter);
@@ -1803,39 +1798,39 @@ const useStoreHomeSubmit = () => {
           );
           setValue(
             "email_box_email",
-            res?.contact_us?.email_box_email[language || "en"]
+            "dummy@example.com"
           );
           setValue(
             "email_box_text",
-            res?.contact_us?.email_box_text[language || "en"]
+            "dummy@example.com"
           );
           setValue(
             "callUs_box_title",
-            res?.contact_us?.call_box_title[language || "en"]
+            "Call Us"
           );
           setValue(
             "callUs_box_phone",
-            res?.contact_us?.call_box_phone[language || "en"]
+            "0000000000"
           );
           setValue(
             "callUs_box_text",
-            res?.contact_us?.call_box_text[language || "en"]
+            "0000000000"
           );
           setValue(
             "address_box_title",
-            res?.contact_us?.address_box_title[language || "en"]
+            "Address"
           );
           setValue(
             "address_box_address_one",
-            res?.contact_us?.address_box_address_one[language || "en"]
+            "Dummy Address, City, Country"
           );
           setValue(
             "address_box_address_two",
-            res?.contact_us?.address_box_address_two[language || "en"]
+            ""
           );
           setValue(
             "address_box_address_three",
-            res?.contact_us?.address_box_address_three[language || "en"]
+            ""
           );
           setValue(
             "contact_form_title",
